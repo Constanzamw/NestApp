@@ -66,7 +66,7 @@ export class TuitsService {
         const updatedTuit: Tuit = await this.tuitRepository.preload({
           id,
           message,
-        });
+        })
       
         // Si updatedTuit es null, significa que preload no encontró el Tuit
         if (!updatedTuit) {
